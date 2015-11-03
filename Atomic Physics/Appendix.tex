@@ -1,0 +1,75 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Sample template for MIT Junior Lab Student Written Summaries
+% Available from http://web.mit.edu/8.13/samplepaper/sample-paper.tex
+%
+% Last Updated June 20, 2004
+%
+% Adapted from the American Physical Societies REVTeK-4 Pages
+% at http://publish.aps.org
+%
+% ADVICE TO STUDENTS: Each time you write a paper, start with this
+%    template and save under a new filename.  If convenient, don't
+%    erase unneeded lines, just comment them out.  Often, they
+%    will be useful containers for information.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PREAMBLE
+% The preamble of a LaTeX document is the set of commands that precede
+% the \begin{document} line.  It contains a \documentclass line
+% to load the REVTeK-4 macro definitions and various \usepackage
+% lines to load other macro packages.
+%
+% ADVICE TO STUDENTS: This preamble contains a suggested set of
+%     class options to generate a ``Junior Lab'' look and feel that
+%     facilitate quick review and feedback from one's peers, TA's
+%     and section instructors.  Don't make substantial changes without
+%     first consulting your section instructor.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[aps,twocolumn,secnumarabic,nobalancelastpage,amsmath,amssymb,
+nofootinbib]{revtex4}
+
+% nofootinbib is another document class option that allows you to put
+% footnotes on the page where they occur rather than at the end of the
+% paper.  This makes for easier reading!
+
+% secnumarabic is a particularly nice way of identifying sections by
+% number to aid electronic review and commentary.
+
+% amsmath and amssymb are necessary for the subequations environment
+% among others
+
+\usepackage{graphics}      % standard graphics specifications
+\usepackage{graphicx}      % alternative graphics specifications
+\usepackage{longtable}     % helps with long table options
+\usepackage{url}           % for on-line citations
+\usepackage{bm}            % special 'bold-math' package
+\usepackage{subfigure}
+\usepackage{booktabs}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                 %%%%%
+% And now, begin the document...  %%%%%
+%                                 %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\setcounter{page}{8}
+
+\section*{Appendix}
+
+\begin{figure}[hhh]
+  \begin{center}
+    \subfigure[Spectral Broadening in the Alpha Line. The fit is centered around 6668 (6667, 6669) with a standard deviation of 4.61599 (4.04889, 5.18309). The values in parentheses are the 95$\%$ confidence intervals.]{\includegraphics[width=7.5 cm]{alphaline.png}}
+    \subfigure[Spectral Broadening in the Beta Line. The fit is centered around  4965 (4965, 4965) with a standard deviation of 4.72347 (4.3282, 5.11875).]{\includegraphics[width=7.5 cm]{betaline.png}}
+    \subfigure[Spectral Broadening in the Gamma Line. The fit is centered around 4446 (4446, 4446) with a standard deviation of 4.93773 (4.77156, 5.1039).]{\includegraphics[width=7.5 cm]{gammaline.png}}
+  \end{center}
+  \caption{Spectral Broadening exhibited in Hydrogen Balmer Series lines.}
+  \label{Appendix}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
